@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Lixo | Recicle seu Lixo Eletrônico</title>
+<meta name="description" content="Descubra o que é lixo eletrônico, seus riscos e como descartá-lo corretamente em São Paulo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER / NAV -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#topo" class="logo">
+      <span class="logo__icon">♻️</span>
+      <span class="logo__text">EcoTech<span class="logo__highlight"> 1º K</span></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="#o-que-e" class="nav__link">O que é</a></li>
+        <li><a href="#exemplos" class="nav__link">Exemplos</a></li>
+        <li><a href="#descarte" class="nav__link">Como Descartar</a></li>
+        <li><a href="#footer" class="nav__link">Créditos</a></li>
+      </ul>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+      <span class="hamburger__bar"></span>
+      <span class="hamburger__bar"></span>
+      <span class="hamburger__bar"></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="topo">
+  <div class="hero__bg-shape"></div>
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <h1 class="hero__title">Lixo Eletrônico: Você sabe o que é e como descartá-lo corretamente?</h1>
+      <p class="hero__subtitle">O videogame antigo, o fone quebrado e aquele celular encostado na gaveta podem transformar o planeta se descartados do jeito certo.</p>
+      <a href="#o-que-e" class="btn btn--primary btn--cta" id="ctaBtn">
+        Saiba mais clicando aqui
+        <span class="btn__arrow">↓</span>
+      </a>
+    </div>
+    <div class="hero__visual" aria-hidden="true">
+      <div class="hero__circle hero__circle--1">
+        <img src="assets/banner-hero.jpg" alt="Aparelhos eletrônicos descartados simbolizando o lixo eletrônico" class="hero__circle-img">
+      </div>
+      <div class="hero__circle hero__circle--2"></div>
+      <div class="hero__emoji hero__emoji--1">📱</div>
+      <div class="hero__emoji hero__emoji--2">💻</div>
+      <div class="hero__emoji hero__emoji--3">🔋</div>
+      <div class="hero__emoji hero__emoji--4">🖥️</div>
+      <div class="hero__emoji hero__emoji--5">🎧</div>
+    </div>
+  </div>
+  <div class="scroll-indicator" aria-hidden="true"><span></span></div>
+</section>
+
+<main>
+
+  <!-- SEÇÃO 1: O QUE É LIXO ELETRÔNICO -->
+  <section class="section section--o-que-e" id="o-que-e">
+    <div class="container">
+      <span class="section__eyebrow">Fique por dentro</span>
+      <h2 class="section__title">O que é Lixo Eletrônico?</h2>
+
+      <div class="intro-block">
+        <p class="intro-text">
+          Sabe aquele fone que só funciona de um lado, o carregador com mau contato ou aquele celular antigo esquecido na gaveta? Tudo isso é <strong>"Resíduo de Equipamentos Eletroeletrônicos" (REEE)</strong>, popularmente conhecido como <strong>Lixo Eletrônico ou E-Lixo</strong>. Quando esses aparelhos chegam ao fim da vida útil e são jogados no lixo comum, eles liberam substâncias químicas pesadas que poluem o solo e a água. Mas a boa notícia é: quase tudo neles pode ser reciclado, reaproveitado e transformar a nossa cidade num lugar muito mais sustentável!
+        </p>
+        <figure class="intro-figure">
+          <img src="assets/o-que-e-lixo-eletronico.jpg" alt="Diversos aparelhos eletrônicos descartados, como celulares, cabos e placas, representando o lixo eletrônico" loading="lazy">
+          <figcaption>Cabos, placas e aparelhos: pequenos no bolso, gigantes no impacto ambiental se descartados errado.</figcaption>
+        </figure>
+      </div>
+
+      <h3 class="subsection__title">As 4 categorias do E-Lixo</h3>
+      <div class="cards-grid">
+        <div class="category-card category-card--verde">
+          <div class="category-card__media">
+            <img src="assets/linha-verde.jpg" alt="Equipamentos da Linha Verde: computadores, notebooks e celulares" loading="lazy">
+          </div>
+          <div class="category-card__body">
+            <h4 class="category-card__title">Linha Verde</h4>
+            <p class="category-card__desc">Equipamentos de informática, comunicação e tecnologia.</p>
+            <p class="category-card__examples">Desktops, notebooks, celulares, tablets, mouses, teclados, roteadores e impressoras.</p>
+          </div>
+        </div>
+        <div class="category-card category-card--branca">
+          <div class="category-card__media">
+            <img src="assets/linha-branca.jpg" alt="Equipamentos da Linha Branca: geladeira, máquina de lavar e fogão" loading="lazy">
+          </div>
+          <div class="category-card__body">
+            <h4 class="category-card__title">Linha Branca</h4>
+            <p class="category-card__desc">Eletrodomésticos de grande porte para cozinha e lavanderia.</p>
+            <p class="category-card__examples">Geladeiras, micro-ondas, fogões, máquinas de lavar louça/roupa e freezers.</p>
+          </div>
+        </div>
+        <div class="category-card category-card--marrom">
+          <div class="category-card__media">
+            <img src="assets/linha-marrom.jpg" alt="Equipamentos da Linha Marrom: televisores e monitores antigos" loading="lazy">
+          </div>
+          <div class="category-card__body">
+            <h4 class="category-card__title">Linha Marrom</h4>
+            <p class="category-card__desc">Equipamentos de áudio, vídeo e entretenimento.</p>
+            <p class="category-card__examples">Televisores, monitores, aparelhos de som, home theaters e gravadores.</p>
+          </div>
+        </div>
+        <div class="category-card category-card--azul">
+          <div class="category-card__media">
+            <img src="assets/linha-azul.jpg" alt="Equipamentos da Linha Azul: eletroportáteis diversos" loading="lazy">
+          </div>
+          <div class="category-card__body">
+            <h4 class="category-card__title">Linha Azul</h4>
+            <p class="category-card__desc">Eletroportáteis e utensílios domésticos menores.</p>
+            <p class="category-card__examples">Secadores de cabelo, liquidificadores, batedeiras, ferros de passar e aspiradores de pó.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="subsection__title">Classificação Técnica dos Resíduos</h3>
+      <div class="risk-grid">
+        <div class="risk-card risk-card--perigoso">
+          <div class="risk-card__header">
+            <span class="risk-card__tag">Classe 1</span>
+            <h4>Perigosos ⚠️</h4>
+          </div>
+          <p>Resíduos que apresentam riscos à saúde e ao meio ambiente por conterem metais pesados e substâncias tóxicas (como chumbo, mercúrio e cádmio presentes em baterias, pilhas, placas de circuito e telas CRT/LCD antigas). Precisam de manuseio e descarte especial.</p>
+        </div>
+        <div class="risk-card risk-card--seguro">
+          <div class="risk-card__header">
+            <span class="risk-card__tag">Classe 2</span>
+            <h4>Não Perigosos ✅</h4>
+          </div>
+          <p>Materiais descartados que não apresentam toxicidade imediata (como carcaças plásticas, suportes de metal e fios encapados sem componentes tóxicos livres). Podem ser triados e diretamente reciclados na indústria.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 2: EXEMPLOS -->
+  <section class="section section--exemplos" id="exemplos">
+    <div class="container">
+      <span class="section__eyebrow">Reconheça</span>
+      <h2 class="section__title">Exemplos de Lixo Eletrônico</h2>
+      <p class="section__lead">Clique em qualquer imagem para ampliar e ver de perto o que vira E-Lixo lá em casa.</p>
+
+      <div class="gallery-group">
+        <h3 class="gallery-group__title"><span class="dot dot--verde"></span> Linha Verde</h3>
+        <div class="gallery-grid">
+          <figure class="gallery-item" data-caption="Smartphones velhos">
+            <img src="assets/verde1.jpg" alt="Smartphones antigos empilhados" loading="lazy">
+            <figcaption>Smartphones velhos</figcaption>
+          </figure>
+          <figure class="gallery-item" data-caption="Notebooks e teclados">
+            <img src="assets/verde2.jpg" alt="Notebooks e teclados descartados" loading="lazy">
+            <figcaption>Notebooks e teclados</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="gallery-group">
+        <h3 class="gallery-group__title"><span class="dot dot--branca"></span> Linha Branca</h3>
+        <div class="gallery-grid">
+          <figure class="gallery-item" data-caption="Geladeira antiga">
+            <img src="assets/branca1.jpg" alt="Geladeira antiga abandonada" loading="lazy">
+            <figcaption>Geladeira antiga</figcaption>
+          </figure>
+          <figure class="gallery-item" data-caption="Máquina de lavar">
+            <img src="assets/branca2.jpg" alt="Máquina de lavar roupas antiga" loading="lazy">
+            <figcaption>Máquina de lavar</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="gallery-group">
+        <h3 class="gallery-group__title"><span class="dot dot--marrom"></span> Linha Marrom</h3>
+        <div class="gallery-grid">
+          <figure class="gallery-item" data-caption="Televisor antigo">
+            <img src="assets/marrom1.jpg" alt="Televisor antigo de tubo" loading="lazy">
+            <figcaption>Televisor antigo</figcaption>
+          </figure>
+          <figure class="gallery-item" data-caption="Caixas de som e aparelhos de áudio">
+            <img src="assets/marrom2.jpg" alt="Caixas de som e aparelhos de áudio antigos" loading="lazy">
+            <figcaption>Caixas de som e aparelhos de áudio</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="gallery-group">
+        <h3 class="gallery-group__title"><span class="dot dot--azul"></span> Linha Azul</h3>
+        <div class="gallery-grid">
+          <figure class="gallery-item" data-caption="Liquidificador e secador">
+            <img src="assets/azul1.jpg" alt="Liquidificador e secador de cabelo antigos" loading="lazy">
+            <figcaption>Liquidificador e secador</figcaption>
+          </figure>
+          <figure class="gallery-item" data-caption="Ferro de passar e cafeteira">
+            <img src="assets/azul2.jpg" alt="Ferro de passar e cafeteira antigos" loading="lazy">
+            <figcaption>Ferro de passar e cafeteira</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 3: COMO DESCARTAR -->
+  <section class="section section--descarte" id="descarte">
+    <div class="container">
+      <span class="section__eyebrow">Mão na massa</span>
+      <h2 class="section__title">Como Descartar Corretamente?</h2>
+      <p class="section__lead">Siga o passo a passo e marque cada etapa concluída. Bora agir!</p>
+
+      <div class="steps" id="steps">
+        <div class="step" data-step="1">
+          <button class="step__header" aria-expanded="true">
+            <span class="step__check" aria-hidden="true"></span>
+            <span class="step__number">Passo 1</span>
+            <span class="step__title">Não jogue no lixo comum nem na rua!</span>
+            <span class="step__chevron">⌄</span>
+          </button>
+          <div class="step__content">
+            <p>Lixo eletrônico misturado com lixo orgânico vai parar em aterros e contamina o meio ambiente.</p>
+          </div>
+        </div>
+
+        <div class="step" data-step="2">
+          <button class="step__header" aria-expanded="false">
+            <span class="step__check" aria-hidden="true"></span>
+            <span class="step__number">Passo 2</span>
+            <span class="step__title">Faça uma faxina em casa</span>
+            <span class="step__chevron">⌄</span>
+          </button>
+          <div class="step__content">
+            <p>Reúna cabos soltos, pilhas, aparelhos quebrados e baterias estufadas.</p>
+          </div>
+        </div>
+
+        <div class="step" data-step="3">
+          <button class="step__header" aria-expanded="false">
+            <span class="step__check" aria-hidden="true"></span>
+            <span class="step__number">Passo 3</span>
+            <span class="step__title">Apague seus dados pessoais!</span>
+            <span class="step__chevron">⌄</span>
+          </button>
+          <div class="step__content">
+            <p>Se for descartar celulares, computadores ou HDs, faça backup e restaure as configurações de fábrica para sua segurança.</p>
+          </div>
+        </div>
+
+        <div class="step" data-step="4">
+          <button class="step__header" aria-expanded="false">
+            <span class="step__check" aria-hidden="true"></span>
+            <span class="step__number">Passo 4</span>
+            <span class="step__title">Encontre um Ponto de Entrega Voluntária (PEV)</span>
+            <span class="step__chevron">⌄</span>
+          </button>
+          <div class="step__content">
+            <p>Leve os itens até um ponto de coleta especializado na sua região.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="progress-tracker" aria-live="polite">
+        <div class="progress-tracker__bar">
+          <div class="progress-tracker__fill" id="progressFill"></div>
+        </div>
+        <span class="progress-tracker__label" id="progressLabel">0 de 4 passos concluídos</span>
+      </div>
+
+      <h3 class="subsection__title subsection__title--center">Onde levar seu E-Lixo em São Paulo</h3>
+      <div class="links-grid">
+        <div class="link-card">
+          <h4>ABREE</h4>
+          <p>Associação Brasileira de Reciclagem de Eletroeletrônicos e Eletrodomésticos. Encontre PEVs e pontos de coleta em SP por CEP.</p>
+          <a href="https://abree.org.br/" target="_blank" rel="noopener noreferrer" class="btn btn--outline">Acessar ABREE</a>
+        </div>
+        <div class="link-card">
+          <h4>Green Eletron</h4>
+          <p>Gestora para reciclagem de eletroeletrônicos e pilhas com diversos pontos na capital paulista.</p>
+          <a href="https://greeneletron.org.br/" target="_blank" rel="noopener noreferrer" class="btn btn--outline">Acessar Green Eletron</a>
+        </div>
+        <div class="link-card">
+          <h4>JLA Reversa</h4>
+          <p>Empresa especializada na coleta, logística reversa e reciclagem segura de e-lixo em São Paulo.</p>
+          <a href="http://jlareversa.com.br/" target="_blank" rel="noopener noreferrer" class="btn btn--outline">Acessar JLA Reversa</a>
+        </div>
+        <div class="link-card">
+          <h4>Recicla Sampa</h4>
+          <p>Movimento de conscientização da Prefeitura de SP para localização de pontos de coleta e ecomóveis.</p>
+          <a href="https://www.reciclasampa.com.br/" target="_blank" rel="noopener noreferrer" class="btn btn--outline">Acessar Recicla Sampa</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- RODAPÉ -->
+<footer class="footer" id="footer">
+  <div class="container">
+
+    <div class="footer__credits">
+      <h2 class="footer__title">Projeto desenvolvido pelos alunos da turma 1º K do Colégio Cruzeiro do Sul</h2>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <h4>Giovanna Gavino de Sousa</h4>
+          <span class="team-card__role">Desenvolvedora Web e Criação de Conteúdo</span>
+        </div>
+        <div class="team-card">
+          <h4>Monalisa</h4>
+          <span class="team-card__role">Criação de Conteúdo</span>
+        </div>
+      </div>
+
+      <div class="special-thanks">
+        <h4>Participação Especial e Agradecimentos</h4>
+        <p><strong>Mariana Fiori</strong> — Turma 1º M <span class="team-card__role">(Apoio a Ideias de Criação)</span></p>
+      </div>
+    </div>
+
+    <div class="footer__teachers">
+      <h3 class="footer__subtitle">Com carinho, obrigado(a) professoras 💚</h3>
+      <div class="teacher-grid">
+        <div class="teacher-card">
+          <img src="assets/sozinha-dias.jpg" alt="Foto da Professora Sãozinha Dias" loading="lazy" class="teacher-card__photo">
+          <div class="teacher-card__info">
+            <h4>Professora Sãozinha Dias</h4>
+            <span class="teacher-card__role">Professora de Biologia</span>
+            <p>"Nossos sinceros agradecimentos pela orientação impecável e por nos proporcionar a incrível oportunidade de apresentar este trabalho junto aos alunos da Universidade Cruzeiro do Sul."</p>
+          </div>
+        </div>
+        <div class="teacher-card">
+          <img src="assets/safire.jpg" alt="Foto da Professora Safire" loading="lazy" class="teacher-card__photo">
+          <div class="teacher-card__info">
+            <h4>Professora Safire</h4>
+            <span class="teacher-card__role">Professora de TI e Design de Animação</span>
+            <p>"Nossa gratidão por todo aprendizado, suporte técnico e rica contribuição no design e desenvolvimento durante a realização deste projeto."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>🌎 Feito com propósito para um planeta mais consciente. Colégio Cruzeiro do Sul — Turma 1º K.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX MODAL -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+  <div class="lightbox__content" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Fechar imagem ampliada">&times;</button>
+    <img src="" alt="" class="lightbox__img" id="lightboxImg">
+    <p class="lightbox__caption" id="lightboxCaption"></p>
+  </div>
+</div>
+
+<button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
